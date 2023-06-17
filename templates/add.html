@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+</head>
+<body>
+    <h1>Add Book</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label for="id_auth_first_name">Author First Name:</label>
+            <input type="text" name="auth_first_name" id="id_auth_first_name">
+        </div>
+        <div>
+            <label for="id_auth_email">Author Email:</label>
+            <input type="email" name="auth_email" id="id_auth_email">
+        </div>
+        <div>
+            <label for="id_title">Title:</label>
+            <input type="text" name="title" id="id_title">
+        </div>
+        <div>
+            <label for="id_publisher">Publisher:</label>
+            <input type="text" name="publisher" id="id_publisher">
+        </div>
+        <div>
+            <label for="id_publication_year">Publication Year:</label>
+            <input type="number" name="publication_year" id="id_publication_year">
+        </div>
+        <div>
+            <label for="id_issue_status">Issue Status:</label>
+            <input type="checkbox" name="issue_status" id="id_issue_status">
+        </div>
+        <div>
+            <label for="id_issued_roll_no">Issued Roll No:</label>
+            <input type="number" name="issued_roll_no" id="id_issued_roll_no">
+        </div>
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>

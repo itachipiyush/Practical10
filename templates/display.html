@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <th>Author First Name</th>
+            <th>Author Email</th>
+            <th>Title</th>
+            <th>Publisher</th>
+            <th>Publication Year</th>
+            <th>Issue Status</th>
+            <th>Issued Roll No</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.auth_first_name }}</td>
+            <td>{{ book.auth_email }}</td>
+            <td>{{ book.Title }}</td>
+            <td>{{ book.Publisher }}</td>
+            <td>{{ book.Publication_year }}</td>
+            <td>{{ book.Issue_status }}</td>
+            <td>{{ book.Issued_roll_no }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
